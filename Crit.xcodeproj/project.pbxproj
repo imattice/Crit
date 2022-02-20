@@ -14,6 +14,20 @@
 		7F5B314927C0BCE6003D079D /* CritTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B314827C0BCE6003D079D /* CritTests.swift */; };
 		7F5B315327C0BCE6003D079D /* CritUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B315227C0BCE6003D079D /* CritUITests.swift */; };
 		7F5B315527C0BCE6003D079D /* CritUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B315427C0BCE6003D079D /* CritUITestsLaunchTests.swift */; };
+		7F5B316327C0BE8C003D079D /* Race.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B316227C0BE8C003D079D /* Race.swift */; };
+		7F5B316727C0BEB9003D079D /* CreatureSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B316627C0BEB9003D079D /* CreatureSize.swift */; };
+		7F5B316927C0BEC1003D079D /* Subrace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B316827C0BEC1003D079D /* Subrace.swift */; };
+		7F5B316B27C0BEC5003D079D /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B316A27C0BEC5003D079D /* Language.swift */; };
+		7F5B316D27C0BECD003D079D /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B316C27C0BECD003D079D /* Feature.swift */; };
+		7F5B316F27C0BED4003D079D /* SenseRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B316E27C0BED4003D079D /* SenseRecord.swift */; };
+		7F5B317227C0C205003D079D /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 7F5B317127C0C205003D079D /* Realm */; };
+		7F5B317427C0C205003D079D /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7F5B317327C0C205003D079D /* RealmSwift */; };
+		7F5B317627C0C42C003D079D /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B317527C0C42C003D079D /* Record.swift */; };
+		7F5B317A27C15054003D079D /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B317927C15054003D079D /* Source.swift */; };
+		7F5B317C27C15BE6003D079D /* LanguageRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B317B27C15BE6003D079D /* LanguageRecord.swift */; };
+		7F5B317F27C15C8C003D079D /* RaceRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B317E27C15C8C003D079D /* RaceRecord.swift */; };
+		7F5B318227C15CD8003D079D /* FeatureRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B318127C15CD8003D079D /* FeatureRecord.swift */; };
+		7F5B318527C1617B003D079D /* SubraceRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B318427C1617B003D079D /* SubraceRecord.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +58,18 @@
 		7F5B314E27C0BCE6003D079D /* CritUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CritUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F5B315227C0BCE6003D079D /* CritUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CritUITests.swift; sourceTree = "<group>"; };
 		7F5B315427C0BCE6003D079D /* CritUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CritUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7F5B316227C0BE8C003D079D /* Race.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Race.swift; sourceTree = "<group>"; };
+		7F5B316627C0BEB9003D079D /* CreatureSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatureSize.swift; sourceTree = "<group>"; };
+		7F5B316827C0BEC1003D079D /* Subrace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subrace.swift; sourceTree = "<group>"; };
+		7F5B316A27C0BEC5003D079D /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
+		7F5B316C27C0BECD003D079D /* Feature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature.swift; sourceTree = "<group>"; };
+		7F5B316E27C0BED4003D079D /* SenseRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenseRecord.swift; sourceTree = "<group>"; };
+		7F5B317527C0C42C003D079D /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
+		7F5B317927C15054003D079D /* Source.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Source.swift; sourceTree = "<group>"; };
+		7F5B317B27C15BE6003D079D /* LanguageRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageRecord.swift; sourceTree = "<group>"; };
+		7F5B317E27C15C8C003D079D /* RaceRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceRecord.swift; sourceTree = "<group>"; };
+		7F5B318127C15CD8003D079D /* FeatureRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureRecord.swift; sourceTree = "<group>"; };
+		7F5B318427C1617B003D079D /* SubraceRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubraceRecord.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +77,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F5B317427C0C205003D079D /* RealmSwift in Frameworks */,
+				7F5B317227C0C205003D079D /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,10 +122,9 @@
 		7F5B313627C0BCE3003D079D /* Crit */ = {
 			isa = PBXGroup;
 			children = (
-				7F5B313727C0BCE3003D079D /* CritApp.swift */,
-				7F5B313927C0BCE3003D079D /* ContentView.swift */,
-				7F5B313B27C0BCE6003D079D /* Assets.xcassets */,
-				7F5B313D27C0BCE6003D079D /* Preview Content */,
+				7F5B316127C0BCFD003D079D /* SwiftUI */,
+				7F5B316527C0BEAC003D079D /* Design */,
+				7F5B316427C0BE92003D079D /* Models */,
 			);
 			path = Crit;
 			sourceTree = "<group>";
@@ -127,6 +154,83 @@
 			path = CritUITests;
 			sourceTree = "<group>";
 		};
+		7F5B316127C0BCFD003D079D /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				7F5B313D27C0BCE6003D079D /* Preview Content */,
+				7F5B313727C0BCE3003D079D /* CritApp.swift */,
+				7F5B313927C0BCE3003D079D /* ContentView.swift */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		7F5B316427C0BE92003D079D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7F5B317727C0C435003D079D /* Protocols */,
+				7F5B318027C15CA7003D079D /* Race */,
+				7F5B316627C0BEB9003D079D /* CreatureSize.swift */,
+				7F5B318627C16180003D079D /* Subrace */,
+				7F5B317D27C15BF8003D079D /* Language */,
+				7F5B318327C15CDD003D079D /* Feature */,
+				7F5B316E27C0BED4003D079D /* SenseRecord.swift */,
+				7F5B317927C15054003D079D /* Source.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7F5B316527C0BEAC003D079D /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				7F5B313B27C0BCE6003D079D /* Assets.xcassets */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+		7F5B317727C0C435003D079D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				7F5B317527C0C42C003D079D /* Record.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		7F5B317D27C15BF8003D079D /* Language */ = {
+			isa = PBXGroup;
+			children = (
+				7F5B316A27C0BEC5003D079D /* Language.swift */,
+				7F5B317B27C15BE6003D079D /* LanguageRecord.swift */,
+			);
+			path = Language;
+			sourceTree = "<group>";
+		};
+		7F5B318027C15CA7003D079D /* Race */ = {
+			isa = PBXGroup;
+			children = (
+				7F5B316227C0BE8C003D079D /* Race.swift */,
+				7F5B317E27C15C8C003D079D /* RaceRecord.swift */,
+			);
+			path = Race;
+			sourceTree = "<group>";
+		};
+		7F5B318327C15CDD003D079D /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				7F5B316C27C0BECD003D079D /* Feature.swift */,
+				7F5B318127C15CD8003D079D /* FeatureRecord.swift */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		7F5B318627C16180003D079D /* Subrace */ = {
+			isa = PBXGroup;
+			children = (
+				7F5B316827C0BEC1003D079D /* Subrace.swift */,
+				7F5B318427C1617B003D079D /* SubraceRecord.swift */,
+			);
+			path = Subrace;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,6 +238,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7F5B315827C0BCE6003D079D /* Build configuration list for PBXNativeTarget "Crit" */;
 			buildPhases = (
+				7F5B317827C0CC1D003D079D /* Swift Lint */,
 				7F5B313027C0BCE3003D079D /* Sources */,
 				7F5B313127C0BCE3003D079D /* Frameworks */,
 				7F5B313227C0BCE3003D079D /* Resources */,
@@ -143,6 +248,10 @@
 			dependencies = (
 			);
 			name = Crit;
+			packageProductDependencies = (
+				7F5B317127C0C205003D079D /* Realm */,
+				7F5B317327C0C205003D079D /* RealmSwift */,
+			);
 			productName = Crit;
 			productReference = 7F5B313427C0BCE3003D079D /* Crit.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +324,9 @@
 				Base,
 			);
 			mainGroup = 7F5B312B27C0BCE3003D079D;
+			packageReferences = (
+				7F5B317027C0C205003D079D /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = 7F5B313527C0BCE3003D079D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -252,13 +364,46 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7F5B317827C0CC1D003D079D /* Swift Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Swift Lint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\n\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7F5B313027C0BCE3003D079D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F5B318527C1617B003D079D /* SubraceRecord.swift in Sources */,
 				7F5B313A27C0BCE3003D079D /* ContentView.swift in Sources */,
+				7F5B316D27C0BECD003D079D /* Feature.swift in Sources */,
+				7F5B317627C0C42C003D079D /* Record.swift in Sources */,
+				7F5B316327C0BE8C003D079D /* Race.swift in Sources */,
+				7F5B318227C15CD8003D079D /* FeatureRecord.swift in Sources */,
 				7F5B313827C0BCE3003D079D /* CritApp.swift in Sources */,
+				7F5B316F27C0BED4003D079D /* SenseRecord.swift in Sources */,
+				7F5B316B27C0BEC5003D079D /* Language.swift in Sources */,
+				7F5B317C27C15BE6003D079D /* LanguageRecord.swift in Sources */,
+				7F5B316927C0BEC1003D079D /* Subrace.swift in Sources */,
+				7F5B317F27C15C8C003D079D /* RaceRecord.swift in Sources */,
+				7F5B317A27C15054003D079D /* Source.swift in Sources */,
+				7F5B316727C0BEB9003D079D /* CreatureSize.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,7 +563,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Crit/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Crit/SwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = VNA55J4REY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -447,7 +592,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Crit/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Crit/SwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = VNA55J4REY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -585,6 +730,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7F5B317027C0C205003D079D /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7F5B317127C0C205003D079D /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7F5B317027C0C205003D079D /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		7F5B317327C0C205003D079D /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7F5B317027C0C205003D079D /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7F5B312C27C0BCE3003D079D /* Project object */;
 }
