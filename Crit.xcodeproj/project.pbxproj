@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7F5B313827C0BCE3003D079D /* CritApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B313727C0BCE3003D079D /* CritApp.swift */; };
-		7F5B313A27C0BCE3003D079D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B313927C0BCE3003D079D /* ContentView.swift */; };
+		7F5B313A27C0BCE3003D079D /* RecordsSearchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B313927C0BCE3003D079D /* RecordsSearchScreen.swift */; };
 		7F5B313C27C0BCE6003D079D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F5B313B27C0BCE6003D079D /* Assets.xcassets */; };
 		7F5B313F27C0BCE6003D079D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F5B313E27C0BCE6003D079D /* Preview Assets.xcassets */; };
 		7F5B314927C0BCE6003D079D /* CritTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B314827C0BCE6003D079D /* CritTests.swift */; };
@@ -28,6 +28,7 @@
 		7F5B317F27C15C8C003D079D /* RaceRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B317E27C15C8C003D079D /* RaceRecord.swift */; };
 		7F5B318227C15CD8003D079D /* FeatureRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B318127C15CD8003D079D /* FeatureRecord.swift */; };
 		7F5B318527C1617B003D079D /* SubraceRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B318427C1617B003D079D /* SubraceRecord.swift */; };
+		7F5B318827C3F5F5003D079D /* AppSettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B318727C3F5F5003D079D /* AppSettingsScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +51,7 @@
 /* Begin PBXFileReference section */
 		7F5B313427C0BCE3003D079D /* Crit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F5B313727C0BCE3003D079D /* CritApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CritApp.swift; sourceTree = "<group>"; };
-		7F5B313927C0BCE3003D079D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7F5B313927C0BCE3003D079D /* RecordsSearchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsSearchScreen.swift; sourceTree = "<group>"; };
 		7F5B313B27C0BCE6003D079D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F5B313E27C0BCE6003D079D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7F5B314427C0BCE6003D079D /* CritTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CritTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,6 +71,7 @@
 		7F5B317E27C15C8C003D079D /* RaceRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceRecord.swift; sourceTree = "<group>"; };
 		7F5B318127C15CD8003D079D /* FeatureRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureRecord.swift; sourceTree = "<group>"; };
 		7F5B318427C1617B003D079D /* SubraceRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubraceRecord.swift; sourceTree = "<group>"; };
+		7F5B318727C3F5F5003D079D /* AppSettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,7 +161,8 @@
 			children = (
 				7F5B313D27C0BCE6003D079D /* Preview Content */,
 				7F5B313727C0BCE3003D079D /* CritApp.swift */,
-				7F5B313927C0BCE3003D079D /* ContentView.swift */,
+				7F5B313927C0BCE3003D079D /* RecordsSearchScreen.swift */,
+				7F5B318727C3F5F5003D079D /* AppSettingsScreen.swift */,
 			);
 			path = SwiftUI;
 			sourceTree = "<group>";
@@ -391,7 +394,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F5B318527C1617B003D079D /* SubraceRecord.swift in Sources */,
-				7F5B313A27C0BCE3003D079D /* ContentView.swift in Sources */,
+				7F5B313A27C0BCE3003D079D /* RecordsSearchScreen.swift in Sources */,
 				7F5B316D27C0BECD003D079D /* Feature.swift in Sources */,
 				7F5B317627C0C42C003D079D /* Record.swift in Sources */,
 				7F5B316327C0BE8C003D079D /* Race.swift in Sources */,
@@ -400,6 +403,7 @@
 				7F5B316F27C0BED4003D079D /* SenseRecord.swift in Sources */,
 				7F5B316B27C0BEC5003D079D /* Language.swift in Sources */,
 				7F5B317C27C15BE6003D079D /* LanguageRecord.swift in Sources */,
+				7F5B318827C3F5F5003D079D /* AppSettingsScreen.swift in Sources */,
 				7F5B316927C0BEC1003D079D /* Subrace.swift in Sources */,
 				7F5B317F27C15C8C003D079D /* RaceRecord.swift in Sources */,
 				7F5B317A27C15054003D079D /* Source.swift in Sources */,
