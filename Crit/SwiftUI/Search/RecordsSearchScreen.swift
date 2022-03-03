@@ -40,8 +40,8 @@ struct RecordsSearchScreen: View {
                                isActive: $willNavigateToSettings) { EmptyView() }
 
                 List {
-                    ForEach(searchResults) { item in
-                        Text(item.name)
+                    ForEach(searchResults.sorted { $0.name < $1.name }) { record in
+                        SearchResultCell(record)
                     }
                 }
                 .searchable(text: $searchText)

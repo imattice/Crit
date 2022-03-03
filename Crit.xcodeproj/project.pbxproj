@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7F57E1F127D0A19000EBB5ED /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F57E1F027D0A19000EBB5ED /* Array.swift */; };
+		7F57E1F727D0A49000EBB5ED /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F57E1F627D0A49000EBB5ED /* SearchResultCell.swift */; };
 		7F5B313827C0BCE3003D079D /* CritApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B313727C0BCE3003D079D /* CritApp.swift */; };
 		7F5B313A27C0BCE3003D079D /* RecordsSearchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B313927C0BCE3003D079D /* RecordsSearchScreen.swift */; };
 		7F5B313C27C0BCE6003D079D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F5B313B27C0BCE6003D079D /* Assets.xcassets */; };
@@ -75,6 +76,7 @@
 
 /* Begin PBXFileReference section */
 		7F57E1F027D0A19000EBB5ED /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		7F57E1F627D0A49000EBB5ED /* SearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
 		7F5B313427C0BCE3003D079D /* Crit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F5B313727C0BCE3003D079D /* CritApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CritApp.swift; sourceTree = "<group>"; };
 		7F5B313927C0BCE3003D079D /* RecordsSearchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsSearchScreen.swift; sourceTree = "<group>"; };
@@ -181,6 +183,15 @@
 			path = Gameplay;
 			sourceTree = "<group>";
 		};
+		7F57E1F527D0A45700EBB5ED /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				7F5B313927C0BCE3003D079D /* RecordsSearchScreen.swift */,
+				7F57E1F627D0A49000EBB5ED /* SearchResultCell.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
 		7F5B312B27C0BCE3003D079D = {
 			isa = PBXGroup;
 			children = (
@@ -242,7 +253,7 @@
 			children = (
 				7F5B313D27C0BCE6003D079D /* Preview Content */,
 				7F5B313727C0BCE3003D079D /* CritApp.swift */,
-				7F5B313927C0BCE3003D079D /* RecordsSearchScreen.swift */,
+				7F57E1F527D0A45700EBB5ED /* Search */,
 				7F5B318727C3F5F5003D079D /* AppSettingsScreen.swift */,
 			);
 			path = SwiftUI;
@@ -532,6 +543,7 @@
 				7F5B313827C0BCE3003D079D /* CritApp.swift in Sources */,
 				7F612FA227C4406D00C37867 /* ErrorLog.swift in Sources */,
 				7F5B316F27C0BED4003D079D /* Sense.swift in Sources */,
+				7F57E1F727D0A49000EBB5ED /* SearchResultCell.swift in Sources */,
 				7F5B317C27C15BE6003D079D /* LanguageRecord.swift in Sources */,
 				7F612F9C27C40CCE00C37867 /* Stat.swift in Sources */,
 				7F612FA427C4413200C37867 /* ErrorLogLine.swift in Sources */,
