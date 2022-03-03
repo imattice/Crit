@@ -1,0 +1,120 @@
+[
+   {
+      "name":"common",
+      "desc":"",
+      "spokenBy":"humans",
+      "script":"common"
+   },
+   {
+      "name":"dwarvish",
+      "desc":"Dwarvish is full of hard consonants and guttural sounds, and those characteristics spill over into whatever other language a dwarf might speak.",
+      "spokenBy":"dwarves",
+      "script":"dwarvish"
+   },
+   {
+      "name":"elvish",
+      "desc":"Elvish is fluid, with subtle intonations and intricate grammar. Elven literature is rich and varied, and their songs and poems are famous among other races. Many bards learn their language so they can add Elvish ballads to their repertoires.",
+      "spokenBy":"elves",
+      "script":"elvish"
+   },
+   {
+      "name":"giant",
+      "desc":"",
+      "spokenBy":"orgres and giants",
+      "script":"dwarvish"
+   },
+   {
+      "name":"gnomish",
+      "desc":"The Gnomish language, which uses the Dwarvish script, is renowned for its technical treatises and its catalogs of knowledge about the natural world.",
+      "spokenBy":"gnomes",
+      "script":"dwarvish"
+   },
+   {
+      "name":"goblin",
+      "desc":"",
+      "spokenBy":"goblinoids",
+      "script":"dwarvish"
+   },
+   {
+      "name":"halfling",
+      "desc":"The Halfling language isn’t secret, but halflings are loath to share it with others. They write very little, so they don’t have a rich body of literature. Their oral tradition, however, is very strong. Almost all halflings speak Common to converse with the people in whose lands they dwell or through which they are traveling.",
+      "spokenBy":"halflings",
+      "script":"common"
+   },
+   {
+      "name":"orc",
+      "desc":"Orc is a harsh, grating language with hard consonants. It has no script of its own but is written in the Dwarvish script.",
+      "spokenBy":"orcs",
+      "script":"dwarvish"
+   },
+   {
+      "name":"abyssal",
+      "desc":"",
+      "spokenBy":"demons",
+      "script":"infernal",
+      "isExotic":true
+   },
+   {
+      "name":"celestial",
+      "desc":"",
+      "spokenBy":"celestials",
+      "script":"celestial",
+      "isExotic":true
+   },
+   {
+      "name":"draconic",
+      "desc":"Draconic is thought to be one of the oldest languages and is often used in the study of magic. The language sounds harsh to most other creatures and includes numerous hard consonants and sibilants.",
+      "spokenBy":"dragons and dragonborn",
+      "script":"draconic",
+      "isExotic":true
+   },
+   {
+      "name":"deep speech",
+      "desc":"",
+      "spokenBy":"aboleths and cloakers",
+      "script":"none",
+      "isExotic":true
+   },
+   {
+      "name":"infernal",
+      "desc":"",
+      "spokenBy":"devils",
+      "script":"infernal",
+      "isExotic":true
+   },
+   {
+      "name":"primordial",
+      "desc":"",
+      "spokenBy":"elementals",
+      "script":"dwarvish",
+      "isExotic":true
+   },
+   {
+      "name":"sylvan",
+      "desc":"",
+      "spokenBy":"fey creatures",
+      "script":"elvish",
+      "isExotic":true
+   },
+   {
+      "name":"undercommon",
+      "desc":"",
+      "spokenBy":"underworld traders",
+      "script":"elvish",
+      "isExotic":true
+   },
+   {
+      "name":"thieves' cant",
+      "desc":"",
+      "spokenBy":"thieves",
+      "script":"symbolic",
+      "isSecret":true
+   },
+   {
+      "name":"tongue of the druids",
+      "desc":"",
+      "spokenBy":"druids",
+      "script":"symbolic",
+      "isSecret":true
+   }
+]

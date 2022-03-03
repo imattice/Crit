@@ -18,17 +18,45 @@
 		7F5B316727C0BEB9003D079D /* CreatureSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B316627C0BEB9003D079D /* CreatureSize.swift */; };
 		7F5B316927C0BEC1003D079D /* Subrace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B316827C0BEC1003D079D /* Subrace.swift */; };
 		7F5B316B27C0BEC5003D079D /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B316A27C0BEC5003D079D /* Language.swift */; };
-		7F5B316D27C0BECD003D079D /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B316C27C0BECD003D079D /* Feature.swift */; };
-		7F5B316F27C0BED4003D079D /* SenseRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B316E27C0BED4003D079D /* SenseRecord.swift */; };
+		7F5B316F27C0BED4003D079D /* Sense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B316E27C0BED4003D079D /* Sense.swift */; };
 		7F5B317227C0C205003D079D /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 7F5B317127C0C205003D079D /* Realm */; };
 		7F5B317427C0C205003D079D /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7F5B317327C0C205003D079D /* RealmSwift */; };
 		7F5B317627C0C42C003D079D /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B317527C0C42C003D079D /* Record.swift */; };
 		7F5B317A27C15054003D079D /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B317927C15054003D079D /* Source.swift */; };
 		7F5B317C27C15BE6003D079D /* LanguageRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B317B27C15BE6003D079D /* LanguageRecord.swift */; };
 		7F5B317F27C15C8C003D079D /* RaceRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B317E27C15C8C003D079D /* RaceRecord.swift */; };
-		7F5B318227C15CD8003D079D /* FeatureRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B318127C15CD8003D079D /* FeatureRecord.swift */; };
+		7F5B318227C15CD8003D079D /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B318127C15CD8003D079D /* Feature.swift */; };
 		7F5B318527C1617B003D079D /* SubraceRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B318427C1617B003D079D /* SubraceRecord.swift */; };
 		7F5B318827C3F5F5003D079D /* AppSettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B318727C3F5F5003D079D /* AppSettingsScreen.swift */; };
+		7F612F8327C403AB00C37867 /* languages.json in Resources */ = {isa = PBXBuildFile; fileRef = 7F612F6D27C403AB00C37867 /* languages.json */; };
+		7F612F8427C403AB00C37867 /* weapons.json in Resources */ = {isa = PBXBuildFile; fileRef = 7F612F6E27C403AB00C37867 /* weapons.json */; };
+		7F612F8527C403AB00C37867 /* traps.json in Resources */ = {isa = PBXBuildFile; fileRef = 7F612F6F27C403AB00C37867 /* traps.json */; };
+		7F612F8627C403AB00C37867 /* races.json in Resources */ = {isa = PBXBuildFile; fileRef = 7F612F7027C403AB00C37867 /* races.json */; };
+		7F612F8727C403AB00C37867 /* feats.json in Resources */ = {isa = PBXBuildFile; fileRef = 7F612F7127C403AB00C37867 /* feats.json */; };
+		7F612F8827C403AB00C37867 /* magicitems.json in Resources */ = {isa = PBXBuildFile; fileRef = 7F612F7227C403AB00C37867 /* magicitems.json */; };
+		7F612F8927C403AB00C37867 /* items.json in Resources */ = {isa = PBXBuildFile; fileRef = 7F612F7327C403AB00C37867 /* items.json */; };
+		7F612F8A27C403AB00C37867 /* conditions.json in Resources */ = {isa = PBXBuildFile; fileRef = 7F612F7427C403AB00C37867 /* conditions.json */; };
+		7F612F8B27C403AB00C37867 /* tools.json in Resources */ = {isa = PBXBuildFile; fileRef = 7F612F7527C403AB00C37867 /* tools.json */; };
+		7F612F8C27C403AB00C37867 /* classes.json in Resources */ = {isa = PBXBuildFile; fileRef = 7F612F7627C403AB00C37867 /* classes.json */; };
+		7F612F8D27C403AB00C37867 /* backgrounds.json in Resources */ = {isa = PBXBuildFile; fileRef = 7F612F7727C403AB00C37867 /* backgrounds.json */; };
+		7F612F8E27C403AB00C37867 /* packs.json in Resources */ = {isa = PBXBuildFile; fileRef = 7F612F7827C403AB00C37867 /* packs.json */; };
+		7F612F8F27C403AB00C37867 /* diseases.json in Resources */ = {isa = PBXBuildFile; fileRef = 7F612F7927C403AB00C37867 /* diseases.json */; };
+		7F612F9027C403AB00C37867 /* tables.json in Resources */ = {isa = PBXBuildFile; fileRef = 7F612F7A27C403AB00C37867 /* tables.json */; };
+		7F612F9127C403AB00C37867 /* shields.json in Resources */ = {isa = PBXBuildFile; fileRef = 7F612F7B27C403AB00C37867 /* shields.json */; };
+		7F612F9227C403AB00C37867 /* subclasses.json in Resources */ = {isa = PBXBuildFile; fileRef = 7F612F7C27C403AB00C37867 /* subclasses.json */; };
+		7F612F9327C403AB00C37867 /* rules.json in Resources */ = {isa = PBXBuildFile; fileRef = 7F612F7D27C403AB00C37867 /* rules.json */; };
+		7F612F9427C403AB00C37867 /* poisons.json in Resources */ = {isa = PBXBuildFile; fileRef = 7F612F7E27C403AB00C37867 /* poisons.json */; };
+		7F612F9527C403AB00C37867 /* subraces.json in Resources */ = {isa = PBXBuildFile; fileRef = 7F612F7F27C403AB00C37867 /* subraces.json */; };
+		7F612F9627C403AB00C37867 /* armors.json in Resources */ = {isa = PBXBuildFile; fileRef = 7F612F8027C403AB00C37867 /* armors.json */; };
+		7F612F9727C403AB00C37867 /* creatures.json in Resources */ = {isa = PBXBuildFile; fileRef = 7F612F8127C403AB00C37867 /* creatures.json */; };
+		7F612F9827C403AB00C37867 /* spells.json in Resources */ = {isa = PBXBuildFile; fileRef = 7F612F8227C403AB00C37867 /* spells.json */; };
+		7F612F9A27C40C8100C37867 /* AbilityScoreModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F612F9927C40C8100C37867 /* AbilityScoreModifier.swift */; };
+		7F612F9C27C40CCE00C37867 /* Stat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F612F9B27C40CCE00C37867 /* Stat.swift */; };
+		7F612F9E27C40F3100C37867 /* AbilityScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F612F9D27C40F3100C37867 /* AbilityScore.swift */; };
+		7F612FA027C40FC400C37867 /* Modifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F612F9F27C40FC400C37867 /* Modifier.swift */; };
+		7F612FA227C4406D00C37867 /* ErrorLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F612FA127C4406D00C37867 /* ErrorLog.swift */; };
+		7F612FA427C4413200C37867 /* ErrorLogLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F612FA327C4413200C37867 /* ErrorLogLine.swift */; };
+		7F6C8B3427CC389B00AA96C0 /* JSONError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6C8B3327CC389A00AA96C0 /* JSONError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,15 +91,43 @@
 		7F5B316627C0BEB9003D079D /* CreatureSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatureSize.swift; sourceTree = "<group>"; };
 		7F5B316827C0BEC1003D079D /* Subrace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subrace.swift; sourceTree = "<group>"; };
 		7F5B316A27C0BEC5003D079D /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
-		7F5B316C27C0BECD003D079D /* Feature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature.swift; sourceTree = "<group>"; };
-		7F5B316E27C0BED4003D079D /* SenseRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenseRecord.swift; sourceTree = "<group>"; };
+		7F5B316E27C0BED4003D079D /* Sense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sense.swift; sourceTree = "<group>"; };
 		7F5B317527C0C42C003D079D /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
 		7F5B317927C15054003D079D /* Source.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Source.swift; sourceTree = "<group>"; };
 		7F5B317B27C15BE6003D079D /* LanguageRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageRecord.swift; sourceTree = "<group>"; };
 		7F5B317E27C15C8C003D079D /* RaceRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceRecord.swift; sourceTree = "<group>"; };
-		7F5B318127C15CD8003D079D /* FeatureRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureRecord.swift; sourceTree = "<group>"; };
+		7F5B318127C15CD8003D079D /* Feature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature.swift; sourceTree = "<group>"; };
 		7F5B318427C1617B003D079D /* SubraceRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubraceRecord.swift; sourceTree = "<group>"; };
 		7F5B318727C3F5F5003D079D /* AppSettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsScreen.swift; sourceTree = "<group>"; };
+		7F612F6D27C403AB00C37867 /* languages.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = languages.json; sourceTree = "<group>"; };
+		7F612F6E27C403AB00C37867 /* weapons.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = weapons.json; sourceTree = "<group>"; };
+		7F612F6F27C403AB00C37867 /* traps.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = traps.json; sourceTree = "<group>"; };
+		7F612F7027C403AB00C37867 /* races.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = races.json; sourceTree = "<group>"; };
+		7F612F7127C403AB00C37867 /* feats.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = feats.json; sourceTree = "<group>"; };
+		7F612F7227C403AB00C37867 /* magicitems.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = magicitems.json; sourceTree = "<group>"; };
+		7F612F7327C403AB00C37867 /* items.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = items.json; sourceTree = "<group>"; };
+		7F612F7427C403AB00C37867 /* conditions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = conditions.json; sourceTree = "<group>"; };
+		7F612F7527C403AB00C37867 /* tools.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tools.json; sourceTree = "<group>"; };
+		7F612F7627C403AB00C37867 /* classes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = classes.json; sourceTree = "<group>"; };
+		7F612F7727C403AB00C37867 /* backgrounds.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = backgrounds.json; sourceTree = "<group>"; };
+		7F612F7827C403AB00C37867 /* packs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = packs.json; sourceTree = "<group>"; };
+		7F612F7927C403AB00C37867 /* diseases.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = diseases.json; sourceTree = "<group>"; };
+		7F612F7A27C403AB00C37867 /* tables.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tables.json; sourceTree = "<group>"; };
+		7F612F7B27C403AB00C37867 /* shields.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = shields.json; sourceTree = "<group>"; };
+		7F612F7C27C403AB00C37867 /* subclasses.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = subclasses.json; sourceTree = "<group>"; };
+		7F612F7D27C403AB00C37867 /* rules.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = rules.json; sourceTree = "<group>"; };
+		7F612F7E27C403AB00C37867 /* poisons.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = poisons.json; sourceTree = "<group>"; };
+		7F612F7F27C403AB00C37867 /* subraces.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = subraces.json; sourceTree = "<group>"; };
+		7F612F8027C403AB00C37867 /* armors.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = armors.json; sourceTree = "<group>"; };
+		7F612F8127C403AB00C37867 /* creatures.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = creatures.json; sourceTree = "<group>"; };
+		7F612F8227C403AB00C37867 /* spells.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = spells.json; sourceTree = "<group>"; };
+		7F612F9927C40C8100C37867 /* AbilityScoreModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbilityScoreModifier.swift; sourceTree = "<group>"; };
+		7F612F9B27C40CCE00C37867 /* Stat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stat.swift; sourceTree = "<group>"; };
+		7F612F9D27C40F3100C37867 /* AbilityScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbilityScore.swift; sourceTree = "<group>"; };
+		7F612F9F27C40FC400C37867 /* Modifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifier.swift; sourceTree = "<group>"; };
+		7F612FA127C4406D00C37867 /* ErrorLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorLog.swift; sourceTree = "<group>"; };
+		7F612FA327C4413200C37867 /* ErrorLogLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorLogLine.swift; sourceTree = "<group>"; };
+		7F6C8B3327CC389A00AA96C0 /* JSONError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +180,7 @@
 		7F5B313627C0BCE3003D079D /* Crit */ = {
 			isa = PBXGroup;
 			children = (
+				7F612F3F27C4036300C37867 /* Data */,
 				7F5B316127C0BCFD003D079D /* SwiftUI */,
 				7F5B316527C0BEAC003D079D /* Design */,
 				7F5B316427C0BE92003D079D /* Models */,
@@ -170,14 +227,19 @@
 		7F5B316427C0BE92003D079D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				7F612FA527CAAA9700C37867 /* Errors */,
 				7F5B317727C0C435003D079D /* Protocols */,
 				7F5B318027C15CA7003D079D /* Race */,
 				7F5B316627C0BEB9003D079D /* CreatureSize.swift */,
 				7F5B318627C16180003D079D /* Subrace */,
 				7F5B317D27C15BF8003D079D /* Language */,
-				7F5B318327C15CDD003D079D /* Feature */,
-				7F5B316E27C0BED4003D079D /* SenseRecord.swift */,
+				7F5B318127C15CD8003D079D /* Feature.swift */,
+				7F5B316E27C0BED4003D079D /* Sense.swift */,
 				7F5B317927C15054003D079D /* Source.swift */,
+				7F612F9927C40C8100C37867 /* AbilityScoreModifier.swift */,
+				7F612F9F27C40FC400C37867 /* Modifier.swift */,
+				7F612F9D27C40F3100C37867 /* AbilityScore.swift */,
+				7F612F9B27C40CCE00C37867 /* Stat.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -216,15 +278,6 @@
 			path = Race;
 			sourceTree = "<group>";
 		};
-		7F5B318327C15CDD003D079D /* Feature */ = {
-			isa = PBXGroup;
-			children = (
-				7F5B316C27C0BECD003D079D /* Feature.swift */,
-				7F5B318127C15CD8003D079D /* FeatureRecord.swift */,
-			);
-			path = Feature;
-			sourceTree = "<group>";
-		};
 		7F5B318627C16180003D079D /* Subrace */ = {
 			isa = PBXGroup;
 			children = (
@@ -232,6 +285,61 @@
 				7F5B318427C1617B003D079D /* SubraceRecord.swift */,
 			);
 			path = Subrace;
+			sourceTree = "<group>";
+		};
+		7F612F3F27C4036300C37867 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				7F612F6C27C403AB00C37867 /* JSON */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		7F612F6C27C403AB00C37867 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				7F612F8027C403AB00C37867 /* armors.json */,
+				7F612F7727C403AB00C37867 /* backgrounds.json */,
+				7F612F7627C403AB00C37867 /* classes.json */,
+				7F612F7427C403AB00C37867 /* conditions.json */,
+				7F612F8127C403AB00C37867 /* creatures.json */,
+				7F612F7927C403AB00C37867 /* diseases.json */,
+				7F612F7127C403AB00C37867 /* feats.json */,
+				7F612F7327C403AB00C37867 /* items.json */,
+				7F612F6D27C403AB00C37867 /* languages.json */,
+				7F612F7227C403AB00C37867 /* magicitems.json */,
+				7F612F7827C403AB00C37867 /* packs.json */,
+				7F612F7E27C403AB00C37867 /* poisons.json */,
+				7F612F7027C403AB00C37867 /* races.json */,
+				7F612F7D27C403AB00C37867 /* rules.json */,
+				7F612F7B27C403AB00C37867 /* shields.json */,
+				7F612F8227C403AB00C37867 /* spells.json */,
+				7F612F7C27C403AB00C37867 /* subclasses.json */,
+				7F612F7F27C403AB00C37867 /* subraces.json */,
+				7F612F7A27C403AB00C37867 /* tables.json */,
+				7F612F7527C403AB00C37867 /* tools.json */,
+				7F612F6F27C403AB00C37867 /* traps.json */,
+				7F612F6E27C403AB00C37867 /* weapons.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		7F612FA527CAAA9700C37867 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				7F612FA627CAAAAC00C37867 /* ErrorLog */,
+				7F6C8B3327CC389A00AA96C0 /* JSONError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		7F612FA627CAAAAC00C37867 /* ErrorLog */ = {
+			isa = PBXGroup;
+			children = (
+				7F612FA127C4406D00C37867 /* ErrorLog.swift */,
+				7F612FA327C4413200C37867 /* ErrorLogLine.swift */,
+			);
+			path = ErrorLog;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -346,8 +454,30 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F612F8327C403AB00C37867 /* languages.json in Resources */,
+				7F612F8A27C403AB00C37867 /* conditions.json in Resources */,
+				7F612F8E27C403AB00C37867 /* packs.json in Resources */,
+				7F612F8C27C403AB00C37867 /* classes.json in Resources */,
+				7F612F8F27C403AB00C37867 /* diseases.json in Resources */,
+				7F612F8427C403AB00C37867 /* weapons.json in Resources */,
+				7F612F9827C403AB00C37867 /* spells.json in Resources */,
+				7F612F8827C403AB00C37867 /* magicitems.json in Resources */,
+				7F612F9127C403AB00C37867 /* shields.json in Resources */,
+				7F612F8B27C403AB00C37867 /* tools.json in Resources */,
+				7F612F8527C403AB00C37867 /* traps.json in Resources */,
 				7F5B313F27C0BCE6003D079D /* Preview Assets.xcassets in Resources */,
+				7F612F9627C403AB00C37867 /* armors.json in Resources */,
+				7F612F9427C403AB00C37867 /* poisons.json in Resources */,
+				7F612F8627C403AB00C37867 /* races.json in Resources */,
+				7F612F9327C403AB00C37867 /* rules.json in Resources */,
 				7F5B313C27C0BCE6003D079D /* Assets.xcassets in Resources */,
+				7F612F9527C403AB00C37867 /* subraces.json in Resources */,
+				7F612F9727C403AB00C37867 /* creatures.json in Resources */,
+				7F612F9227C403AB00C37867 /* subclasses.json in Resources */,
+				7F612F8727C403AB00C37867 /* feats.json in Resources */,
+				7F612F8D27C403AB00C37867 /* backgrounds.json in Resources */,
+				7F612F9027C403AB00C37867 /* tables.json in Resources */,
+				7F612F8927C403AB00C37867 /* items.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,18 +525,24 @@
 			files = (
 				7F5B318527C1617B003D079D /* SubraceRecord.swift in Sources */,
 				7F5B313A27C0BCE3003D079D /* RecordsSearchScreen.swift in Sources */,
-				7F5B316D27C0BECD003D079D /* Feature.swift in Sources */,
+				7F612F9E27C40F3100C37867 /* AbilityScore.swift in Sources */,
+				7F6C8B3427CC389B00AA96C0 /* JSONError.swift in Sources */,
+				7F612FA027C40FC400C37867 /* Modifier.swift in Sources */,
 				7F5B317627C0C42C003D079D /* Record.swift in Sources */,
 				7F5B316327C0BE8C003D079D /* Race.swift in Sources */,
-				7F5B318227C15CD8003D079D /* FeatureRecord.swift in Sources */,
+				7F5B318227C15CD8003D079D /* Feature.swift in Sources */,
 				7F5B313827C0BCE3003D079D /* CritApp.swift in Sources */,
-				7F5B316F27C0BED4003D079D /* SenseRecord.swift in Sources */,
+				7F612FA227C4406D00C37867 /* ErrorLog.swift in Sources */,
+				7F5B316F27C0BED4003D079D /* Sense.swift in Sources */,
 				7F5B316B27C0BEC5003D079D /* Language.swift in Sources */,
 				7F5B317C27C15BE6003D079D /* LanguageRecord.swift in Sources */,
+				7F612F9C27C40CCE00C37867 /* Stat.swift in Sources */,
+				7F612FA427C4413200C37867 /* ErrorLogLine.swift in Sources */,
 				7F5B318827C3F5F5003D079D /* AppSettingsScreen.swift in Sources */,
 				7F5B316927C0BEC1003D079D /* Subrace.swift in Sources */,
 				7F5B317F27C15C8C003D079D /* RaceRecord.swift in Sources */,
 				7F5B317A27C15054003D079D /* Source.swift in Sources */,
+				7F612F9A27C40C8100C37867 /* AbilityScoreModifier.swift in Sources */,
 				7F5B316727C0BEB9003D079D /* CreatureSize.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
