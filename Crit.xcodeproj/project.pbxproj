@@ -159,6 +159,28 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		7F57E1F327D0A38C00EBB5ED /* AbilityScore */ = {
+			isa = PBXGroup;
+			children = (
+				7F612F9D27C40F3100C37867 /* AbilityScore.swift */,
+				7F612F9927C40C8100C37867 /* AbilityScoreModifier.swift */,
+				7F612F9B27C40CCE00C37867 /* Stat.swift */,
+			);
+			path = AbilityScore;
+			sourceTree = "<group>";
+		};
+		7F57E1F427D0A3A200EBB5ED /* Gameplay */ = {
+			isa = PBXGroup;
+			children = (
+				7F5B316627C0BEB9003D079D /* CreatureSize.swift */,
+				7F5B318127C15CD8003D079D /* Feature.swift */,
+				7F5B316E27C0BED4003D079D /* Sense.swift */,
+				7F5B317927C15054003D079D /* Source.swift */,
+				7F57E1F327D0A38C00EBB5ED /* AbilityScore */,
+			);
+			path = Gameplay;
+			sourceTree = "<group>";
+		};
 		7F5B312B27C0BCE3003D079D = {
 			isa = PBXGroup;
 			children = (
@@ -233,13 +255,7 @@
 				7F612FA527CAAA9700C37867 /* Errors */,
 				7F5B317727C0C435003D079D /* Protocols */,
 				7F5B318027C15CA7003D079D /* Records */,
-				7F5B316627C0BEB9003D079D /* CreatureSize.swift */,
-				7F5B318127C15CD8003D079D /* Feature.swift */,
-				7F5B316E27C0BED4003D079D /* Sense.swift */,
-				7F5B317927C15054003D079D /* Source.swift */,
-				7F612F9927C40C8100C37867 /* AbilityScoreModifier.swift */,
-				7F612F9D27C40F3100C37867 /* AbilityScore.swift */,
-				7F612F9B27C40CCE00C37867 /* Stat.swift */,
+				7F57E1F427D0A3A200EBB5ED /* Gameplay */,
 			);
 			path = Models;
 			sourceTree = "<group>";
