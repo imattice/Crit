@@ -31,7 +31,9 @@ struct AppSettingsScreen: View {
     }
 
     func loadDefaultData() {
-
+        LanguageRecord.storeDefaults()
+        RaceRecord.storeDefaults()
+        SubraceRecord.storeDefaults()
     }
     func presentDeleteConfirmation() {
         isPresentingDeleteAlert = true

@@ -7,70 +7,82 @@
 
 import SwiftUI
 
+import RealmSwift
+
 struct RecordsSearchScreen: View {
     @State private var searchText: String = ""
     @State private var isShowingAddDecisionActionSheet: Bool = false
     @State private var willNavigateToSettings: Bool = false
-    let allData: [String] = ["elf", "human", "dwarf"]
+
+    @ObservedResults(LanguageRecord.self) var languages: Results<LanguageRecord>
+    @ObservedResults(RaceRecord.self) var races: Results<RaceRecord>
+    @ObservedResults(SubraceRecord.self) var subraces: Results<SubraceRecord>
+
+    var allData: [Record] {
+        Array(languages) + Array(races) + Array(subraces)
+    }
+
+    var searchResults: [Record] {
+        if searchText.isEmpty {
+            return allData
+        } else {
+            return allData
+                .filter {
+                    $0.name.contains(searchText.lowercased())
+                }
+        }
+    }
 
     var body: some View {
         NavigationView {
             VStack {
                 NavigationLink(destination: AppSettingsScreen(),
                                isActive: $willNavigateToSettings) { EmptyView() }
-            List {
-                ForEach(searchResults, id: \.self) { name in
-                    NavigationLink(destination: Text(name)) {
-                        Text(name)
-                    }
-                }
-            }
-            .searchable(text: $searchText)
-            .navigationTitle("Data Search")
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Button(action: addNewData) {
-                        Image(systemName: "plus")
-                    }
-                }
-                ToolbarItem(placement: .navigationBarLeading) {
-                    Button(action: navigateToSettings) {
-                        Image(systemName: "gearshape")
-                    }
-                }
-            }
-            .actionSheet(isPresented: $isShowingAddDecisionActionSheet) {
-                ActionSheet(title: Text("Add new data"),
-                            buttons: [
-                                .default(Text("Add a New Race"),
-                                         action: addRace),
-                                .default(Text("Add a New Subrace"),
-                                         action: addSubrace),
-                                .default(Text("Add a New Language"),
-                                         action: addLanguage),
-                                .cancel()
-                            ]
-                )
-            }
-        }
-        }
-    }
 
-    var searchResults: [String] {
-        if searchText.isEmpty {
-            return allData
-        } else {
-            return allData.filter { $0.contains(searchText.lowercased()) }
+                List {
+                    ForEach(searchResults) { item in
+                        Text(item.name)
+                    }
+                }
+                .searchable(text: $searchText)
+                .navigationTitle("Data Search")
+                .toolbar {
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        Button(action: addNewData) {
+                            Image(systemName: "plus")
+                        }
+                    }
+                    ToolbarItem(placement: .navigationBarLeading) {
+                        Button(action: navigateToSettings) {
+                            Image(systemName: "gearshape")
+                        }
+                    }
+                }
+                .actionSheet(isPresented: $isShowingAddDecisionActionSheet) {
+                    ActionSheet(
+                        title: Text("Add new data"),
+                        buttons: [
+                            .default(Text("Add a New Race"),
+                                     action: addNewRace),
+                            .default(Text("Add a New Subrace"),
+                                     action: addNewSubrace),
+                            .default(Text("Add a New Language"),
+                                     action: addNewLanguage),
+                            .cancel()
+                        ]
+                    )
+                }
+            }
         }
     }
 
-    func addRace() {
+    func addNewRace() {
 
     }
-    func addSubrace() {
+    func addNewSubrace() {
 
     }
-    func addLanguage() {
+    func addNewLanguage() {
 
     }
 
