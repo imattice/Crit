@@ -16,8 +16,6 @@
 		7F5B315327C0BCE6003D079D /* CritUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B315227C0BCE6003D079D /* CritUITests.swift */; };
 		7F5B315527C0BCE6003D079D /* CritUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B315427C0BCE6003D079D /* CritUITestsLaunchTests.swift */; };
 		7F5B316727C0BEB9003D079D /* CreatureSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B316627C0BEB9003D079D /* CreatureSize.swift */; };
-		7F5B316927C0BEC1003D079D /* Subrace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B316827C0BEC1003D079D /* Subrace.swift */; };
-		7F5B316B27C0BEC5003D079D /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B316A27C0BEC5003D079D /* Language.swift */; };
 		7F5B316F27C0BED4003D079D /* Sense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B316E27C0BED4003D079D /* Sense.swift */; };
 		7F5B317227C0C205003D079D /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 7F5B317127C0C205003D079D /* Realm */; };
 		7F5B317427C0C205003D079D /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7F5B317327C0C205003D079D /* RealmSwift */; };
@@ -88,8 +86,6 @@
 		7F5B315227C0BCE6003D079D /* CritUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CritUITests.swift; sourceTree = "<group>"; };
 		7F5B315427C0BCE6003D079D /* CritUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CritUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7F5B316627C0BEB9003D079D /* CreatureSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatureSize.swift; sourceTree = "<group>"; };
-		7F5B316827C0BEC1003D079D /* Subrace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subrace.swift; sourceTree = "<group>"; };
-		7F5B316A27C0BEC5003D079D /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
 		7F5B316E27C0BED4003D079D /* Sense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sense.swift; sourceTree = "<group>"; };
 		7F5B317527C0C42C003D079D /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
 		7F5B317927C15054003D079D /* Source.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Source.swift; sourceTree = "<group>"; };
@@ -236,10 +232,8 @@
 				7F57E1F227D0A19A00EBB5ED /* Extensions */,
 				7F612FA527CAAA9700C37867 /* Errors */,
 				7F5B317727C0C435003D079D /* Protocols */,
-				7F5B318027C15CA7003D079D /* Race */,
+				7F5B318027C15CA7003D079D /* Records */,
 				7F5B316627C0BEB9003D079D /* CreatureSize.swift */,
-				7F5B318627C16180003D079D /* Subrace */,
-				7F5B317D27C15BF8003D079D /* Language */,
 				7F5B318127C15CD8003D079D /* Feature.swift */,
 				7F5B316E27C0BED4003D079D /* Sense.swift */,
 				7F5B317927C15054003D079D /* Source.swift */,
@@ -261,35 +255,19 @@
 		7F5B317727C0C435003D079D /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				7F5B317527C0C42C003D079D /* Record.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
 		};
-		7F5B317D27C15BF8003D079D /* Language */ = {
+		7F5B318027C15CA7003D079D /* Records */ = {
 			isa = PBXGroup;
 			children = (
-				7F5B316A27C0BEC5003D079D /* Language.swift */,
+				7F5B317527C0C42C003D079D /* Record.swift */,
+				7F5B317E27C15C8C003D079D /* RaceRecord.swift */,
+				7F5B318427C1617B003D079D /* SubraceRecord.swift */,
 				7F5B317B27C15BE6003D079D /* LanguageRecord.swift */,
 			);
-			path = Language;
-			sourceTree = "<group>";
-		};
-		7F5B318027C15CA7003D079D /* Race */ = {
-			isa = PBXGroup;
-			children = (
-				7F5B317E27C15C8C003D079D /* RaceRecord.swift */,
-			);
-			path = Race;
-			sourceTree = "<group>";
-		};
-		7F5B318627C16180003D079D /* Subrace */ = {
-			isa = PBXGroup;
-			children = (
-				7F5B316827C0BEC1003D079D /* Subrace.swift */,
-				7F5B318427C1617B003D079D /* SubraceRecord.swift */,
-			);
-			path = Subrace;
+			path = Records;
 			sourceTree = "<group>";
 		};
 		7F612F3F27C4036300C37867 /* Data */ = {
@@ -538,12 +516,10 @@
 				7F5B313827C0BCE3003D079D /* CritApp.swift in Sources */,
 				7F612FA227C4406D00C37867 /* ErrorLog.swift in Sources */,
 				7F5B316F27C0BED4003D079D /* Sense.swift in Sources */,
-				7F5B316B27C0BEC5003D079D /* Language.swift in Sources */,
 				7F5B317C27C15BE6003D079D /* LanguageRecord.swift in Sources */,
 				7F612F9C27C40CCE00C37867 /* Stat.swift in Sources */,
 				7F612FA427C4413200C37867 /* ErrorLogLine.swift in Sources */,
 				7F5B318827C3F5F5003D079D /* AppSettingsScreen.swift in Sources */,
-				7F5B316927C0BEC1003D079D /* Subrace.swift in Sources */,
 				7F5B317F27C15C8C003D079D /* RaceRecord.swift in Sources */,
 				7F5B317A27C15054003D079D /* Source.swift in Sources */,
 				7F612F9A27C40C8100C37867 /* AbilityScoreModifier.swift in Sources */,
