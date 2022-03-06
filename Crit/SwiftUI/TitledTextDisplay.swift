@@ -18,7 +18,7 @@ struct TitledTextDisplay: View {
 
             Text(content)
         }
-        .cornerRadius(Constant.Frame.cornerRadius.value)
+        .cornerRadius(Constant.Frame.cornerRadius)
     }
 }
 

@@ -5,6 +5,7 @@
 
 disabled_rules:
 - todo
+- line_length
 
 opt_in_rules:
 - array_init
@@ -96,9 +97,6 @@ identifier_name:
         - d4
         - d6
         - d8
-line_length:
-    warning: 160
-    error: 200
 nesting:
     type_level: 2
 type_name:
