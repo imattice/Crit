@@ -60,7 +60,7 @@ final class RaceRecord: Record {
 
     required convenience init(from decoder: Decoder) throws {
         self.init()
-        
+
         let container: KeyedDecodingContainer = try decoder.container(keyedBy: CodingKeys.self)
         self.name = try container.decode(String.self, forKey: .name)
         self.desc = try container.decode(String.self, forKey: .desc)
@@ -96,7 +96,5 @@ extension RaceRecord {
     }
 
     // TODO: Implement method
-    func linkSubracesIfNeeded() {
-
-    }
+    func linkSubracesIfNeeded() { /* TODO: Implement Method */ }
 }

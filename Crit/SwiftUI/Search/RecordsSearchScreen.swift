@@ -76,15 +76,9 @@ struct RecordsSearchScreen: View {
         }
     }
 
-    func addNewRace() {
-
-    }
-    func addNewSubrace() {
-
-    }
-    func addNewLanguage() {
-
-    }
+    func addNewRace() { /* TODO: Implement method */ }
+    func addNewSubrace() { /* TODO: Implement method */ }
+    func addNewLanguage() { /* TODO: Implement method */ }
 
     func addNewData() {
         isShowingAddDecisionActionSheet = true

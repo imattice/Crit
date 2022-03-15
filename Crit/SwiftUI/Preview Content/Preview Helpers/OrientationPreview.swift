@@ -34,6 +34,7 @@ struct OrientationPreview<Content: View>: View {
     }
 }
 
+/* swiftlint:disable file_types_order */
 // MARK: - Previews
 struct OrientationPreview_Previews: PreviewProvider {
     static var previews: some View {
@@ -43,7 +44,6 @@ struct OrientationPreview_Previews: PreviewProvider {
     }
 }
 
-/* swiftlint:disable file_types_order */
 // MARK: - Interface Orientation: Hashable
 // Used to support OrientationPreview
 // This could be removed if InterfaceOrientation conforms to Hashable in the future

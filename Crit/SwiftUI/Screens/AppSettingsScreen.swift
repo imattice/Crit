@@ -38,9 +38,7 @@ struct AppSettingsScreen: View {
     func presentDeleteConfirmation() {
         isPresentingDeleteAlert = true
     }
-    func deleteAllData() {
-
-    }
+    func deleteAllData() { /* TODO: Implement Method */ }
 }
 
 struct AppSettingsScreen_Previews: PreviewProvider {
