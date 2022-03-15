@@ -1,5 +1,5 @@
 //
-//  DisplaySection.swift
+//  DetailSection.swift
 //  Crit
 //
 //  Created by Ike Mattice on 3/6/22.
@@ -8,11 +8,12 @@
 import SwiftUI
 
 /// Displays the given content in a standard section style
-struct DisplaySection<Content: View>: View {
+struct DetailSection<Content: View>: View {
     let content: () -> Content
 
     var body: some View {
         content()
+            .frame(maxWidth: .infinity)
             .padding()
             .transition(.scale)
             .background(Constant.AppColor.sectionBackground)
@@ -22,9 +23,10 @@ struct DisplaySection<Content: View>: View {
     }
 }
 
+// MARK: - Previews
 struct DisplaySection_Previews: PreviewProvider {
     static var previews: some View {
-        DisplaySection {
+        DetailSection {
             Text("Display content")
         }
     }

@@ -7,83 +7,32 @@
 
 import SwiftUI
 
+/// A view that displays search results in a cell format
 struct SearchResultCell: View {
+    /// A record that holds data for the cell
     let record: Record
-    private let recordType: RecordType
 
     var body: some View {
+        NavigationLink(destination: RecordDetailView(record: record)) {
         HStack {
             VStack(alignment: .leading) {
-                Text(recordType.cellTitle)
+                Text(record.type.title)
                     .font(.caption)
-                    .foregroundColor(recordType.color)
+                    .foregroundColor(record.type.color)
                     .padding(.bottom, 4)
                 Text(record.name.capitalized)
             }
             Spacer()
         }
+        }
     }
 
     init(_ record: Record) {
         self.record = record
-        self.recordType = RecordType(record)
     }
 }
 
-extension SearchResultCell {
-    enum RecordType {
-        case race, subrace, language, unknown
-
-        init(_ record: Record) {
-            switch record {
-            case is RaceRecord:
-                self = .race
-
-            case is SubraceRecord:
-                self = .subrace
-
-            case is LanguageRecord:
-                self = .language
-
-            default:
-                self = .unknown
-            }
-        }
-
-        var cellTitle: String {
-            switch self {
-            case .race:
-                return "Race"
-
-            case .subrace:
-                return "Subrace"
-
-            case .language:
-                return "Language"
-
-            case .unknown:
-                return ""
-            }
-        }
-
-        var color: Color {
-            switch self {
-            case .race:
-                return .red
-
-            case .subrace:
-                return .orange
-
-            case .language:
-                return .yellow
-
-            case .unknown:
-                return .gray
-            }
-        }
-    }
-}
-
+// MARK: - Previews
 struct SearchResultCell_Previews: PreviewProvider {
     static let record: RaceRecord = RaceRecord()
 

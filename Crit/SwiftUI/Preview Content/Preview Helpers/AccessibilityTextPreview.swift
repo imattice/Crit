@@ -1,4 +1,4 @@
-//  AccessibiltyTextPreview.swift
+//  AccessibilityTextPreview.swift
 //  roll-calculator
 //
 //  Created by Ike Mattice on 8/21/21.
@@ -7,7 +7,7 @@
 import SwiftUI
 
 /// Displays content given the selected dynamic sizes
-struct AccessibiltyTextPreview<Content: View>: View {
+struct AccessibilityTextPreview<Content: View>: View {
     /// The views to display
     let content: () -> Content
     /// The text sizes to display
@@ -28,7 +28,7 @@ struct AccessibiltyTextPreview<Content: View>: View {
 }
 
 // MARK: - Size Option Definition
-extension AccessibiltyTextPreview {
+extension AccessibilityTextPreview {
     /// Defines a standardized group of Dynamic types
     enum SizeOption {
         /// An option for a standard group of text sizes
@@ -72,7 +72,7 @@ extension AccessibiltyTextPreview {
 // MARK: - Previews
 struct AccessibiltyTextPreview_Previews: PreviewProvider {
     static var previews: some View {
-        AccessibiltyTextPreview {
+        AccessibilityTextPreview {
             Text("Test Text")
                 .previewLayout(.sizeThatFits)
         }

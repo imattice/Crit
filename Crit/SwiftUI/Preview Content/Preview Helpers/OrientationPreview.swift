@@ -43,6 +43,7 @@ struct OrientationPreview_Previews: PreviewProvider {
     }
 }
 
+/* swiftlint:disable file_types_order */
 // MARK: - Interface Orientation: Hashable
 // Used to support OrientationPreview
 // This could be removed if InterfaceOrientation conforms to Hashable in the future
@@ -51,4 +52,3 @@ extension InterfaceOrientation: Hashable {
         hasher.combine(self.id)
     }
 }
-

@@ -43,16 +43,7 @@ struct CircularFramedImage: View {
             }
 }
 
-extension CircularFramedImage {
-    /// Contains variables to configure the frame
-    struct FrameViewModel {
-        /// The color of the frame
-        let color: Color
-        /// The width of the frame stroke
-        let width: CGFloat
-    }
-}
-
+// MARK: - Previews
 struct CircularFramedImage_Previews: PreviewProvider {
     static let image: Image = Image("elf~color")
     static var previews: some View {

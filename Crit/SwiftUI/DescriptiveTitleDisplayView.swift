@@ -14,7 +14,7 @@ struct DescriptiveTitleDisplayView: View {
     let viewModel: ViewModel
 
     var body: some View {
-        DisplaySection {
+        DetailSection {
             VStack {
                 HStack {
                     if let image: Image = viewModel.image {
@@ -56,9 +56,20 @@ extension DescriptiveTitleDisplayView {
         let description: String?
         /// The image for the view, if any
         let image: Image?
+
+        init(title: String,
+             subtitle: String? = nil,
+             description: String? = nil,
+             image: Image? = nil) {
+            self.title = title
+            self.subtitle = subtitle
+            self.description = description
+            self.image = image
+        }
     }
 }
 
+// MARK: - Previews
 struct DescriptiveTitleDisplayView_Previews: PreviewProvider {
     static let languageViewModel: DescriptiveTitleDisplayView.ViewModel =
     DescriptiveTitleDisplayView.ViewModel(
