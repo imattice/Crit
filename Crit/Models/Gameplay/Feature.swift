@@ -8,7 +8,7 @@
 import Foundation
 
 /// Describes unique feature that will affect gameplay
-struct Feature: Codable {
+struct Feature: Codable, Identifiable {
     /// An identifier for the feature
     let id: UUID = UUID()
     /// A title for the feature

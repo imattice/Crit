@@ -16,10 +16,10 @@ struct DetailSubsection<Content: View>: View {
             .frame(maxWidth: .infinity)
             .padding()
             .transition(.scale)
-            .background(Constant.AppColor.subsectionBackground)
+            .background(Color.subsectionSurface)
             .cornerRadius(Constant.Frame.cornerRadius)
             .padding(.horizontal)
-            .shadow(radius: 5)
+            .shadow(radius: Constant.shadowRadius)
     }
 }
 
