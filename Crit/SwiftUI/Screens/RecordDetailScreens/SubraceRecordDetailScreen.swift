@@ -26,6 +26,10 @@ struct SubraceRecordDetailScreen: View {
             DescriptiveTitleDisplayView(
                 viewModel: titleViewModel)
 
+            if record.abilityScoreModifiers.isEmpty == false {
+                AbilityScoreModifierGrid(scores: record.abilityScoreModifiers)
+            }
+
             if record.features.isEmpty == false {
                 ForEach(record.features) { feature in
                     TextDisplay(
@@ -33,7 +37,9 @@ struct SubraceRecordDetailScreen: View {
                         text: feature.desc)
                 }
             }
+            Spacer()
         }
+        .padding(.horizontal)
     }
 }
 

@@ -2,79 +2,80 @@
 //  PillView.swift
 //  Crit
 //
-//  Created by Ike Mattice on 3/18/22.
+//  Created by Ike Mattice on 3/19/22.
 //
 
 import SwiftUI
 
 struct PillView: View {
-    let text: String
-    let backgroundColor: Color
-    let frameModel: FrameViewModel
+    @State var currentState: PillState
 
-    var body: some View {
-        Group {
-        if let dashLength: CGFloat = frameModel.dashLength {
-            Text(text)
-                .frame(maxWidth: .infinity)
-                .padding(Constant.Padding.small)
-                .background(backgroundColor)
-                .cornerRadius(Constant.Frame.cornerRadius)
-                .overlay {
-                    RoundedRectangle(
-                        cornerRadius: Constant.Frame.cornerRadius)
-                    .stroke(frameModel.color,
-                            style: StrokeStyle(
-                                lineWidth: frameModel.width,
-                                dash: [dashLength]))
-                }
-        } else {
-            Text(text)
-                .frame(maxWidth: .infinity)
-                .padding(Constant.Padding.small)
-                .background(backgroundColor)
-                .cornerRadius(Constant.Frame.cornerRadius)
-                .overlay {
-                    RoundedRectangle(
-                        cornerRadius: Constant.Frame.cornerRadius)
-                    .stroke(frameModel.color,
-                            lineWidth: frameModel.width)
-                }
-        }
-        }
-        .foregroundColor(frameModel.color)
+    let text: String
+    var viewModel: PillViewModel {
+        currentState.viewModel
     }
 
-    init(_ text: String,
-         backgroundColor: Color = .white,
-         frameModel: FrameViewModel = FrameViewModel(
-            color: .clear, width: 0)) {
-                self.text = text
-                self.backgroundColor = backgroundColor
-                self.frameModel = frameModel
-            }
+    var body: some View {
+        BorderedText(
+            text,
+            textColor: currentState.viewModel.textColor,
+            backgroundColor: currentState.viewModel.backgroundColor,
+            frameModel: currentState.viewModel.frameViewModel)
+        .animation(.easeInOut, value: currentState)
+        .transition(.opacity)
+    }
+
+    init(_ text: String, state: PillState) {
+        self.text = text
+        self._currentState = State(initialValue: state)
+    }
 }
 
 // MARK: Previews
 struct PillView_Previews: PreviewProvider {
-    static let text: String = "Some Text"
-    static let frameModel: FrameViewModel = FrameViewModel(
-        color: .activeBorder,
-        width: Constant.Frame.BorderWidth.medium)
-    static let dashedFrameModel: FrameViewModel = FrameViewModel(
-        color: .selectedBorder,
-        width: Constant.Frame.BorderWidth.medium,
-        dashLength: Constant.Frame.dashWidth)
+    static let standardState: PillState = .standard
+    static let selectableState: PillState = .selectable
+    static let selectedState: PillState = .selected
+    static let activeState: PillState = .active
+    static let inactiveState: PillState = .inactive
+
+    @State static var mutableState: PillState = .selectable
 
     static var previews: some View {
         Group {
-            PillView(text,
-                     backgroundColor: Color.activeSurface,
-                     frameModel: frameModel)
-            PillView(text,
-                     backgroundColor: Color.selectedSurface,
-                     frameModel: dashedFrameModel)
+            PillView(String(describing: standardState.self).capitalized,
+                     state: standardState)
+            .previewDisplayName("\(String(describing: standardState.self).capitalized) State")
+
+            PillView(String(describing: selectableState.self).capitalized,
+                     state: selectableState)
+            .previewDisplayName("\(String(describing: selectableState.self).capitalized) State")
+
+            PillView(String(describing: selectedState.self).capitalized,
+                     state: selectedState)
+            .previewDisplayName("\(String(describing: selectedState.self).capitalized) State")
+
+            PillView(String(describing: activeState.self).capitalized,
+                     state: activeState)
+            .previewDisplayName("\(String(describing: activeState.self).capitalized) State")
+
+            PillView(String(describing: inactiveState.self).capitalized,
+                     state: inactiveState)
+            .previewDisplayName("\(String(describing: inactiveState.self).capitalized) State")
+
+            PillView("Tap to Toggle",
+                     state: mutableState)
+            .onTapGesture(perform: toggleState)
+            .previewDisplayName("Toggle-able Pill")
         }
         .previewLayout(.sizeThatFits)
+    }
+
+    static func toggleState() {
+        if mutableState == .selectable {
+            mutableState = .selected
+        } else {
+            mutableState = .selectable
+        }
     }
 }

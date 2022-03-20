@@ -25,8 +25,17 @@ extension Color {
     static let selectedBorder: Color = Color("Colors/Selected/Border")
 
     // MARK: Section
-    static let sectionSurface: Color = Color("Colors/Surface/Low")
+    static let sectionSurface: Color = Color("Colors/Surface/Mid")
 
     // MARK: Subsection
     static let subsectionSurface: Color = Color("Colors/Surface/High")
+
+    // MARK: Surface
+    static let surfaceLow: Color = Color("Colors/Surface/Low")
+    static let surfaceMid: Color = Color("Colors/Surface/Mid")
+    static let surfaceHigh: Color = Color("Colors/Surface/High")
+
+    // MARK: Text
+    static let textDark: Color = Color("Colors/Text/Dark")
+    static let textLight: Color = Color("Colors/Text/Light")
 }

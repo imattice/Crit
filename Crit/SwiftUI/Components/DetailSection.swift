@@ -18,7 +18,6 @@ struct DetailSection<Content: View>: View {
             .transition(.scale)
             .background(Color.sectionSurface)
             .cornerRadius(Constant.Frame.cornerRadius)
-            .padding(.horizontal)
             .shadow(radius: Constant.shadowRadius)
     }
 }

@@ -40,6 +40,7 @@ struct LanguageRecordDetailScreen: View {
             }
             Spacer()
         }
+        .padding(.horizontal)
     }
 }
 
