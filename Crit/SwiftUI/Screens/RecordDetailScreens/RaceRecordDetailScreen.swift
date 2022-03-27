@@ -1,18 +1,17 @@
 //
-//  SubraceRecordDetailScreen.swift
+//  RaceRecordDetailScreen.swift
 //  Crit
 //
-//  Created by Ike Mattice on 3/15/22.
+//  Created by Ike Mattice on 3/20/22.
 //
 
 import SwiftUI
 
-/// A full-screen view that displays the details of a LanguageRecord
-struct SubraceRecordDetailScreen: View {
+struct RaceRecordDetailScreen: View {
     typealias TitleViewModel = DescriptiveTitleDisplayView.ViewModel
 
     /// The record containing data for the detail screen
-    let record: SubraceRecord
+    let record: RaceRecord
 
     /// Contains data for the title view
     var titleViewModel: TitleViewModel {
@@ -25,6 +24,14 @@ struct SubraceRecordDetailScreen: View {
         ScrollView {
             DescriptiveTitleDisplayView(
                 viewModel: titleViewModel)
+
+            SpeedAndSizeDisplayView(
+                speed: record.speed,
+                size: record.size)
+
+            LanguageDisplayView(
+                source: record.name,
+                languages: record.languages)
 
             if record.abilityScoreModifiers.isEmpty == false {
                 AbilityScoreModifierGrid(scores: record.abilityScoreModifiers)
@@ -43,10 +50,11 @@ struct SubraceRecordDetailScreen: View {
     }
 }
 
-struct SubraceRecordDetailScreen_Previews: PreviewProvider {
-    static let record: SubraceRecord = PreviewDataProvider.sampleSubraceRecord
+// MARK: Previews
+struct RaceRecordDetailScreen_Previews: PreviewProvider {
+    static let record: RaceRecord = PreviewDataProvider.sampleRaceRecord
 
     static var previews: some View {
-        SubraceRecordDetailScreen(record: record)
+        RaceRecordDetailScreen(record: record)
     }
 }

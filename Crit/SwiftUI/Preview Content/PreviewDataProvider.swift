@@ -8,6 +8,21 @@
 import SwiftUI
 
 enum PreviewDataProvider {
+    /// A race record that can be used in previews
+    ///
+    /// Returns the first item from the decoded JSON data
+    static var sampleRaceRecord: RaceRecord {
+        do {
+            let records: [Record] = try RaceRecord.parseFromJSON()
+            guard let record = records.first as? RaceRecord else {
+                fatalError("Failed to fetch RaceRecord for previews")
+            }
+            return record
+        } catch {
+            fatalError("Failed to fetch RaceRecord for previews")
+        }
+    }
+
     /// A subrace record that can be used in previews
     ///
     /// Returns the first item from the decoded JSON data

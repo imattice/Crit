@@ -22,7 +22,7 @@ struct LanguageRecordDetailScreen: View {
     }
 
     var body: some View {
-        VStack {
+        ScrollView {
             DescriptiveTitleDisplayView(
                 viewModel: titleViewModel)
 

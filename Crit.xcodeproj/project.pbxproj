@@ -77,6 +77,13 @@
 		7F612FA427C4413200C37867 /* ErrorLogLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F612FA327C4413200C37867 /* ErrorLogLine.swift */; };
 		7F6C8B3427CC389B00AA96C0 /* JSONError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6C8B3327CC389A00AA96C0 /* JSONError.swift */; };
 		7F70CC7E27E62AD20083F0B9 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F70CC7D27E62AD20083F0B9 /* Color.swift */; };
+		7FF5AFE027E7C59E004B07B0 /* RaceRecordDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF5AFDF27E7C59E004B07B0 /* RaceRecordDetailScreen.swift */; };
+		7FF5AFE227E7C9B5004B07B0 /* SpeedAndSizeDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF5AFE127E7C9B5004B07B0 /* SpeedAndSizeDisplayView.swift */; };
+		7FF5AFE427E7CB22004B07B0 /* LanguageDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF5AFE327E7CB22004B07B0 /* LanguageDisplayView.swift */; };
+		7FF5AFE627E7CDBA004B07B0 /* SizePreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF5AFE527E7CDBA004B07B0 /* SizePreferenceKey.swift */; };
+		7FF5AFE927E7CEC1004B07B0 /* FlexibleHorizontalCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF5AFE827E7CEC1004B07B0 /* FlexibleHorizontalCollectionView.swift */; };
+		7FF5AFF027ED7CF9004B07B0 /* FlexibleHorizontalContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF5AFEF27ED7CF9004B07B0 /* FlexibleHorizontalContainer.swift */; };
+		7FF5AFF227F10612004B07B0 /* Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF5AFF127F10612004B07B0 /* Palette.swift */; };
 		7FF62C9C27E6AFE300BA9FAC /* PillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF62C9B27E6AFE300BA9FAC /* PillView.swift */; };
 		7FF62C9E27E6AFF300BA9FAC /* PillState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF62C9D27E6AFF300BA9FAC /* PillState.swift */; };
 		7FF62CA227E6CFB600BA9FAC /* PillViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF62CA127E6CFB600BA9FAC /* PillViewModel.swift */; };
@@ -172,6 +179,13 @@
 		7F612FA327C4413200C37867 /* ErrorLogLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorLogLine.swift; sourceTree = "<group>"; };
 		7F6C8B3327CC389A00AA96C0 /* JSONError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONError.swift; sourceTree = "<group>"; };
 		7F70CC7D27E62AD20083F0B9 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		7FF5AFDF27E7C59E004B07B0 /* RaceRecordDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceRecordDetailScreen.swift; sourceTree = "<group>"; };
+		7FF5AFE127E7C9B5004B07B0 /* SpeedAndSizeDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedAndSizeDisplayView.swift; sourceTree = "<group>"; };
+		7FF5AFE327E7CB22004B07B0 /* LanguageDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageDisplayView.swift; sourceTree = "<group>"; };
+		7FF5AFE527E7CDBA004B07B0 /* SizePreferenceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizePreferenceKey.swift; sourceTree = "<group>"; };
+		7FF5AFE827E7CEC1004B07B0 /* FlexibleHorizontalCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexibleHorizontalCollectionView.swift; sourceTree = "<group>"; };
+		7FF5AFEF27ED7CF9004B07B0 /* FlexibleHorizontalContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexibleHorizontalContainer.swift; sourceTree = "<group>"; };
+		7FF5AFF127F10612004B07B0 /* Palette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Palette.swift; sourceTree = "<group>"; };
 		7FF62C9B27E6AFE300BA9FAC /* PillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillView.swift; sourceTree = "<group>"; };
 		7FF62C9D27E6AFF300BA9FAC /* PillState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillState.swift; sourceTree = "<group>"; };
 		7FF62CA127E6CFB600BA9FAC /* PillViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillViewModel.swift; sourceTree = "<group>"; };
@@ -285,6 +299,7 @@
 				7F57E21227D582C900EBB5ED /* CircularFramedText.swift */,
 				7F57E21727D586F000EBB5ED /* TitledCircularFramedText.swift */,
 				7F57E22B27E58A2300EBB5ED /* PillView */,
+				7FF5AFEA27EA1FB8004B07B0 /* FlexibleHorizontalCollectionView */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -294,6 +309,7 @@
 			children = (
 				7F57E1F827D51BE000EBB5ED /* LanguageRecordDetailScreen.swift */,
 				7F57E22727E12B5700EBB5ED /* SubraceRecordDetailScreen.swift */,
+				7FF5AFDF27E7C59E004B07B0 /* RaceRecordDetailScreen.swift */,
 			);
 			path = RecordDetailScreens;
 			sourceTree = "<group>";
@@ -377,6 +393,7 @@
 				7FF62CA327E6E80D00BA9FAC /* Views */,
 				7F57E20B27D5288800EBB5ED /* CollapsableText.swift */,
 				7F5B313D27C0BCE6003D079D /* Preview Content */,
+				7FF5AFE727E7CDD4004B07B0 /* Helpers */,
 			);
 			path = SwiftUI;
 			sourceTree = "<group>";
@@ -477,11 +494,30 @@
 			path = ErrorLog;
 			sourceTree = "<group>";
 		};
+		7FF5AFE727E7CDD4004B07B0 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				7FF5AFE527E7CDBA004B07B0 /* SizePreferenceKey.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		7FF5AFEA27EA1FB8004B07B0 /* FlexibleHorizontalCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				7FF5AFE827E7CEC1004B07B0 /* FlexibleHorizontalCollectionView.swift */,
+				7FF5AFEF27ED7CF9004B07B0 /* FlexibleHorizontalContainer.swift */,
+			);
+			path = FlexibleHorizontalCollectionView;
+			sourceTree = "<group>";
+		};
 		7FF62CA327E6E80D00BA9FAC /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				7F57E20927D51F9E00EBB5ED /* DescriptiveTitleDisplayView.swift */,
 				7FF62CA427E6E88F00BA9FAC /* AbilityScoreModifierGrid.swift */,
+				7FF5AFE127E7C9B5004B07B0 /* SpeedAndSizeDisplayView.swift */,
+				7FF5AFE327E7CB22004B07B0 /* LanguageDisplayView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -667,10 +703,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FF5AFE027E7C59E004B07B0 /* RaceRecordDetailScreen.swift in Sources */,
 				7F5B318527C1617B003D079D /* SubraceRecord.swift in Sources */,
 				7F57E1FD27D51C5400EBB5ED /* Constant.swift in Sources */,
 				7F57E1F127D0A19000EBB5ED /* Array.swift in Sources */,
 				7F5B313A27C0BCE3003D079D /* RecordsSearchScreen.swift in Sources */,
+				7FF5AFE927E7CEC1004B07B0 /* FlexibleHorizontalCollectionView.swift in Sources */,
 				7F57E21827D586F000EBB5ED /* TitledCircularFramedText.swift in Sources */,
 				7F57E22527E1253200EBB5ED /* DetailSubsection.swift in Sources */,
 				7F57E20427D51D7900EBB5ED /* AccessibilityTextPreview.swift in Sources */,
@@ -681,6 +719,7 @@
 				7FF62C9C27E6AFE300BA9FAC /* PillView.swift in Sources */,
 				7F6C8B3427CC389B00AA96C0 /* JSONError.swift in Sources */,
 				7F5B317627C0C42C003D079D /* Record.swift in Sources */,
+				7FF5AFF027ED7CF9004B07B0 /* FlexibleHorizontalContainer.swift in Sources */,
 				7F57E22127E11B7A00EBB5ED /* PreviewDataProvider.swift in Sources */,
 				7F57E22327E1200C00EBB5ED /* RecordType.swift in Sources */,
 				7F5B318227C15CD8003D079D /* Feature.swift in Sources */,
@@ -698,6 +737,7 @@
 				7F612F9C27C40CCE00C37867 /* Stat.swift in Sources */,
 				7FF62C9E27E6AFF300BA9FAC /* PillState.swift in Sources */,
 				7F57E20E27D53CB200EBB5ED /* CircularFramedImage.swift in Sources */,
+				7FF5AFE627E7CDBA004B07B0 /* SizePreferenceKey.swift in Sources */,
 				7F612FA427C4413200C37867 /* ErrorLogLine.swift in Sources */,
 				7FF62CA227E6CFB600BA9FAC /* PillViewModel.swift in Sources */,
 				7F57E20A27D51F9E00EBB5ED /* DescriptiveTitleDisplayView.swift in Sources */,
@@ -707,8 +747,10 @@
 				7F5B317A27C15054003D079D /* Source.swift in Sources */,
 				7F57E21527D582E500EBB5ED /* FrameViewModel.swift in Sources */,
 				7F57E21327D582C900EBB5ED /* CircularFramedText.swift in Sources */,
+				7FF5AFE427E7CB22004B07B0 /* LanguageDisplayView.swift in Sources */,
 				7F57E21F27E1150A00EBB5ED /* RecordDetailView.swift in Sources */,
 				7F612F9A27C40C8100C37867 /* AbilityScoreModifier.swift in Sources */,
+				7FF5AFE227E7C9B5004B07B0 /* SpeedAndSizeDisplayView.swift in Sources */,
 				7F5B316727C0BEB9003D079D /* CreatureSize.swift in Sources */,
 				7F57E1F927D51BE000EBB5ED /* LanguageRecordDetailScreen.swift in Sources */,
 				7F57E22827E12B5700EBB5ED /* SubraceRecordDetailScreen.swift in Sources */,
