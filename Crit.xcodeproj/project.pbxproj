@@ -416,6 +416,7 @@
 				7F5B313B27C0BCE6003D079D /* Assets.xcassets */,
 				7F57E1FC27D51C5400EBB5ED /* Constant.swift */,
 				7F70CC7D27E62AD20083F0B9 /* Color.swift */,
+				7FF5AFF127F10612004B07B0 /* Palette.swift */,
 			);
 			path = Design;
 			sourceTree = "<group>";
@@ -743,6 +744,7 @@
 				7F57E20A27D51F9E00EBB5ED /* DescriptiveTitleDisplayView.swift in Sources */,
 				7F57E20727D51D7900EBB5ED /* DevicePreview.swift in Sources */,
 				7F5B318827C3F5F5003D079D /* AppSettingsScreen.swift in Sources */,
+				7FF5AFF227F10612004B07B0 /* Palette.swift in Sources */,
 				7F5B317F27C15C8C003D079D /* RaceRecord.swift in Sources */,
 				7F5B317A27C15054003D079D /* Source.swift in Sources */,
 				7F57E21527D582E500EBB5ED /* FrameViewModel.swift in Sources */,

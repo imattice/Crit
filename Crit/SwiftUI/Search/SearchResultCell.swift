@@ -18,7 +18,7 @@ struct SearchResultCell: View {
             VStack(alignment: .leading) {
                 Text(record.type.title)
                     .font(.caption)
-                    .foregroundColor(record.type.color)
+                    .foregroundColor(record.type.palette.shade)
                     .padding(.bottom, 4)
                 Text(record.name.capitalized)
             }

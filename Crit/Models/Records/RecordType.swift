@@ -47,19 +47,16 @@ extension Record {
         }
 
         /// Returns a color that represents the record type
-        var color: Color {
+        var palette: Color.Palette {
             switch self {
-            case .race:
-                return .red
-
-            case .subrace:
-                return .orange
+            case .race, .subrace:
+                return Color.racePalette
 
             case .language:
-                return .yellow
+                return Color.languagePalette
 
             case .unknown:
-                return .gray
+                return Color.Palette.gray
             }
         }
     }

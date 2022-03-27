@@ -9,26 +9,26 @@ import SwiftUI
 
 extension Color {
     // MARK: Active
-    static let activeBorder: Color = Color("Colors/Active/Border")
-    static let activeSurface: Color = Color("Colors/Active/Surface")
+    static let activeSurface: Color = Color("Colors/Surface/High")
+    static let activeBorder: Color = Color("Colors/Primary/High")
 
     // MARK: Inactive
-    static let inactiveSurface: Color = Color("Colors/Inactive/Surface")
-    static let inactiveBorder: Color = Color("Colors/Inactive/Border")
+    static let inactiveSurface: Color = Color("Colors/Grayscale/Top")
+    static let inactiveBorder: Color = Color("Colors/Grayscale/Mid")
 
     // MARK: Selectable
-    static let selectableSurface: Color = Color("Colors/Selectable/Surface")
-    static let selectableBorder: Color = Color("Colors/Selectable/Border")
+    static let selectableSurface: Color = Color("Colors/Surface/High")
+    static let selectableBorder: Color = Color("Colors/Secondary/High")
 
     // MARK: Selected
-    static let selectedSurface: Color = Color("Colors/Selected/Surface")
-    static let selectedBorder: Color = Color("Colors/Selected/Border")
+    static let selectedSurface: Color = Color("Colors/Surface/High")
+    static let selectedBorder: Color = Color("Colors/Primary/High")
 
     // MARK: Section
-    static let sectionSurface: Color = Color("Colors/Surface/Mid")
+    static let sectionSurface: Color = Color("Colors/Grayscale/Top")
 
     // MARK: Subsection
-    static let subsectionSurface: Color = Color("Colors/Surface/High")
+    static let subsectionSurface: Color = Color("Colors/Grayscale/Mid")
 
     // MARK: Surface
     static let surfaceLow: Color = Color("Colors/Surface/Low")
@@ -36,6 +36,34 @@ extension Color {
     static let surfaceHigh: Color = Color("Colors/Surface/High")
 
     // MARK: Text
-    static let textDark: Color = Color("Colors/Text/Dark")
-    static let textLight: Color = Color("Colors/Text/Light")
+    static let textDark: Color = Color("Colors/Text/Primary")
+    static let textLight: Color = Color("Colors/Text/Secondary")
+
+    // MARK: Record Palette
+    // Race/Subrace Record
+    static let racePalette: Color.Palette = .red
+
+    // Language
+    static let languagePalette: Color.Palette = .yellow
+
+    // Class/Subclass Record
+    static let classPalette: Color.Palette = .teal
+
+    // Background Record
+    static let backgroundPalette: Color.Palette = .brown
+
+    // Creature, Conditions, Disease, Rule, Record
+    static let dmPalette: Color.Palette = .green
+
+    // Feat Record
+    static let featPalette: Color.Palette = .orange
+
+    // Item, Armor, Pack, Poison, Shield, Tool, Trap, Weapon  Record
+    static let itemPalette: Color.Palette = .blueSteel
+
+    // Magic Item Record
+    static let magicItemPalette: Color.Palette = .purple
+
+    // Spell Record
+    static let spellPalette: Color.Palette = .indigo
 }
