@@ -16,8 +16,8 @@ struct RaceRecordDetailScreen: View {
     /// Contains data for the title view
     var titleViewModel: TitleViewModel {
         TitleViewModel(
-        title: record.name,
-        description: record.desc)
+            title: record.name,
+            description: record.desc)
     }
 
     var body: some View {
@@ -42,6 +42,18 @@ struct RaceRecordDetailScreen: View {
                     TextDisplay(
                         title: feature.title,
                         text: feature.desc)
+                }
+            }
+
+            if record.subraces.isEmpty == false {
+                List {
+                    ForEach(record.subraces) { subraceRecord in
+                        NavigationLink(
+                            destination: SubraceRecordDetailScreen(
+                                record: subraceRecord)) {
+                                    Text(subraceRecord.name)
+                                }
+                    }
                 }
             }
             Spacer()

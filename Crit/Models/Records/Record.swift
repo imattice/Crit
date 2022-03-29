@@ -54,7 +54,8 @@ class Record: Object, Identifiable, Codable {
         }
     }
 
-    static func storeDefaults() {
+    /// Loads the default data to realm if it does not already exist
+    static func loadDefaultsIfNeeded() {
         do {
             // TODO: Is there a better way to track this?  Maybe with a date or version of default data?
             // Maybe store a default data version in the userdefaults?
@@ -68,9 +69,10 @@ class Record: Object, Identifiable, Codable {
                 realm.add(records)
             }
         } catch {
-            // TODO: Handle errors
-            print(error)
-            print("This broke")
+            ErrorLog.shared.logError(
+                sourceClass: String(describing: self),
+                sourceFunc: #function,
+                message: "Failed to store record with error:\n\(error)")
         }
     }
 

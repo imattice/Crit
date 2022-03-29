@@ -77,6 +77,8 @@
 		7F612FA427C4413200C37867 /* ErrorLogLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F612FA327C4413200C37867 /* ErrorLogLine.swift */; };
 		7F6C8B3427CC389B00AA96C0 /* JSONError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6C8B3327CC389A00AA96C0 /* JSONError.swift */; };
 		7F70CC7E27E62AD20083F0B9 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F70CC7D27E62AD20083F0B9 /* Color.swift */; };
+		7FE962A627F2CED50008CB19 /* LinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE962A527F2CED50008CB19 /* LinkView.swift */; };
+		7FE962A827F2D2A60008CB19 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE962A727F2D2A60008CB19 /* DataManager.swift */; };
 		7FF5AFE027E7C59E004B07B0 /* RaceRecordDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF5AFDF27E7C59E004B07B0 /* RaceRecordDetailScreen.swift */; };
 		7FF5AFE227E7C9B5004B07B0 /* SpeedAndSizeDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF5AFE127E7C9B5004B07B0 /* SpeedAndSizeDisplayView.swift */; };
 		7FF5AFE427E7CB22004B07B0 /* LanguageDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF5AFE327E7CB22004B07B0 /* LanguageDisplayView.swift */; };
@@ -84,6 +86,7 @@
 		7FF5AFE927E7CEC1004B07B0 /* FlexibleHorizontalCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF5AFE827E7CEC1004B07B0 /* FlexibleHorizontalCollectionView.swift */; };
 		7FF5AFF027ED7CF9004B07B0 /* FlexibleHorizontalContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF5AFEF27ED7CF9004B07B0 /* FlexibleHorizontalContainer.swift */; };
 		7FF5AFF227F10612004B07B0 /* Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF5AFF127F10612004B07B0 /* Palette.swift */; };
+		7FF5AFF427F1123D004B07B0 /* RecordError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF5AFF327F1123D004B07B0 /* RecordError.swift */; };
 		7FF62C9C27E6AFE300BA9FAC /* PillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF62C9B27E6AFE300BA9FAC /* PillView.swift */; };
 		7FF62C9E27E6AFF300BA9FAC /* PillState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF62C9D27E6AFF300BA9FAC /* PillState.swift */; };
 		7FF62CA227E6CFB600BA9FAC /* PillViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF62CA127E6CFB600BA9FAC /* PillViewModel.swift */; };
@@ -179,6 +182,8 @@
 		7F612FA327C4413200C37867 /* ErrorLogLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorLogLine.swift; sourceTree = "<group>"; };
 		7F6C8B3327CC389A00AA96C0 /* JSONError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONError.swift; sourceTree = "<group>"; };
 		7F70CC7D27E62AD20083F0B9 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		7FE962A527F2CED50008CB19 /* LinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkView.swift; sourceTree = "<group>"; };
+		7FE962A727F2D2A60008CB19 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		7FF5AFDF27E7C59E004B07B0 /* RaceRecordDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceRecordDetailScreen.swift; sourceTree = "<group>"; };
 		7FF5AFE127E7C9B5004B07B0 /* SpeedAndSizeDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedAndSizeDisplayView.swift; sourceTree = "<group>"; };
 		7FF5AFE327E7CB22004B07B0 /* LanguageDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageDisplayView.swift; sourceTree = "<group>"; };
@@ -186,6 +191,7 @@
 		7FF5AFE827E7CEC1004B07B0 /* FlexibleHorizontalCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexibleHorizontalCollectionView.swift; sourceTree = "<group>"; };
 		7FF5AFEF27ED7CF9004B07B0 /* FlexibleHorizontalContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexibleHorizontalContainer.swift; sourceTree = "<group>"; };
 		7FF5AFF127F10612004B07B0 /* Palette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Palette.swift; sourceTree = "<group>"; };
+		7FF5AFF327F1123D004B07B0 /* RecordError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordError.swift; sourceTree = "<group>"; };
 		7FF62C9B27E6AFE300BA9FAC /* PillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillView.swift; sourceTree = "<group>"; };
 		7FF62C9D27E6AFF300BA9FAC /* PillState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillState.swift; sourceTree = "<group>"; };
 		7FF62CA127E6CFB600BA9FAC /* PillViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillViewModel.swift; sourceTree = "<group>"; };
@@ -291,6 +297,7 @@
 		7F57E21927D5E28C00EBB5ED /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				7FE962A527F2CED50008CB19 /* LinkView.swift */,
 				7F57E22C27E593FE00EBB5ED /* BorderedText.swift */,
 				7F57E21C27D5E4D600EBB5ED /* TextDisplay.swift */,
 				7F57E21027D53FBD00EBB5ED /* DetailSection.swift */,
@@ -403,7 +410,6 @@
 			children = (
 				7F57E1F227D0A19A00EBB5ED /* Extensions */,
 				7F612FA527CAAA9700C37867 /* Errors */,
-				7F5B317727C0C435003D079D /* Protocols */,
 				7F5B318027C15CA7003D079D /* Records */,
 				7F57E1F427D0A3A200EBB5ED /* Gameplay */,
 			);
@@ -421,21 +427,14 @@
 			path = Design;
 			sourceTree = "<group>";
 		};
-		7F5B317727C0C435003D079D /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
 		7F5B318027C15CA7003D079D /* Records */ = {
 			isa = PBXGroup;
 			children = (
 				7F5B317527C0C42C003D079D /* Record.swift */,
+				7F57E22227E1200C00EBB5ED /* RecordType.swift */,
 				7F5B317E27C15C8C003D079D /* RaceRecord.swift */,
 				7F5B318427C1617B003D079D /* SubraceRecord.swift */,
 				7F5B317B27C15BE6003D079D /* LanguageRecord.swift */,
-				7F57E22227E1200C00EBB5ED /* RecordType.swift */,
 			);
 			path = Records;
 			sourceTree = "<group>";
@@ -444,6 +443,7 @@
 			isa = PBXGroup;
 			children = (
 				7F612F6C27C403AB00C37867 /* JSON */,
+				7FE962A727F2D2A60008CB19 /* DataManager.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -482,6 +482,7 @@
 			children = (
 				7F612FA627CAAAAC00C37867 /* ErrorLog */,
 				7F6C8B3327CC389A00AA96C0 /* JSONError.swift */,
+				7FF5AFF327F1123D004B07B0 /* RecordError.swift */,
 			);
 			path = Errors;
 			sourceTree = "<group>";
@@ -720,6 +721,7 @@
 				7FF62C9C27E6AFE300BA9FAC /* PillView.swift in Sources */,
 				7F6C8B3427CC389B00AA96C0 /* JSONError.swift in Sources */,
 				7F5B317627C0C42C003D079D /* Record.swift in Sources */,
+				7FE962A627F2CED50008CB19 /* LinkView.swift in Sources */,
 				7FF5AFF027ED7CF9004B07B0 /* FlexibleHorizontalContainer.swift in Sources */,
 				7F57E22127E11B7A00EBB5ED /* PreviewDataProvider.swift in Sources */,
 				7F57E22327E1200C00EBB5ED /* RecordType.swift in Sources */,
@@ -735,6 +737,7 @@
 				7F57E20827D51D7900EBB5ED /* ColorSchemePreview.swift in Sources */,
 				7FF62CA527E6E88F00BA9FAC /* AbilityScoreModifierGrid.swift in Sources */,
 				7F5B317C27C15BE6003D079D /* LanguageRecord.swift in Sources */,
+				7FF5AFF427F1123D004B07B0 /* RecordError.swift in Sources */,
 				7F612F9C27C40CCE00C37867 /* Stat.swift in Sources */,
 				7FF62C9E27E6AFF300BA9FAC /* PillState.swift in Sources */,
 				7F57E20E27D53CB200EBB5ED /* CircularFramedImage.swift in Sources */,
@@ -743,6 +746,7 @@
 				7FF62CA227E6CFB600BA9FAC /* PillViewModel.swift in Sources */,
 				7F57E20A27D51F9E00EBB5ED /* DescriptiveTitleDisplayView.swift in Sources */,
 				7F57E20727D51D7900EBB5ED /* DevicePreview.swift in Sources */,
+				7FE962A827F2D2A60008CB19 /* DataManager.swift in Sources */,
 				7F5B318827C3F5F5003D079D /* AppSettingsScreen.swift in Sources */,
 				7FF5AFF227F10612004B07B0 /* Palette.swift in Sources */,
 				7F5B317F27C15C8C003D079D /* RaceRecord.swift in Sources */,

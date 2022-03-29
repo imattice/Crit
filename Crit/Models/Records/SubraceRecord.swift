@@ -39,6 +39,8 @@ final class SubraceRecord: Record {
         self.parentString = try container.decode(String.self, forKey: .parent)
         self.abilityScoreModifiers = try container.decodeIfPresent([AbilityScoreModifier].self, forKey: .abilityScoreModifiers) ?? [AbilityScoreModifier]()
         self.features = try container.decodeIfPresent([Feature].self, forKey: .features) ?? [Feature]()
+
+        linkToParentIfNeeded()
     }
 
     override func encode(to encoder: Encoder) throws {
@@ -48,6 +50,34 @@ final class SubraceRecord: Record {
         try container.encode(parentString, forKey: .parent)
         try container.encode(features, forKey: .features)
         try container.encode(abilityScoreModifiers, forKey: .abilityScoreModifiers)
+    }
+
+    /// Links the SubraceRecord to a parent record
+    private func linkToParentIfNeeded() {
+        guard parentRecord == nil else { return }
+
+        do {
+            let realm: Realm = try Realm()
+            guard let record: RaceRecord = Array(realm.objects(RaceRecord.self)).first(where: { $0.name.lowercased() == parentString.lowercased() }) else {
+                throw RecordError.noParentRecord(name: self.parentString.lowercased())
+            }
+            do {
+                try realm.write {
+                    self.parentRecord = record
+                    record.subraces.append(self)
+                }
+            } catch {
+                ErrorLog.shared.logError(
+                    sourceClass: String(describing: self),
+                    sourceFunc: #function,
+                    message: "Failed to link records")
+            }
+        } catch {
+            ErrorLog.shared.logError(
+                sourceClass: String(describing: self),
+                sourceFunc: #function,
+                message: "Failed to connect \(String(describing: SubraceRecord.self)) to parent record with error:\n\(error.localizedDescription)")
+        }
     }
 }
 

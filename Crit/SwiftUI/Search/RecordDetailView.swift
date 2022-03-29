@@ -19,6 +19,16 @@ struct RecordDetailView: View {
                 LanguageRecordDetailScreen(record: languageRecord)
             }
 
+        case .race:
+            if let raceRecord: RaceRecord = record as? RaceRecord {
+                RaceRecordDetailScreen(record: raceRecord)
+            }
+
+        case .subrace:
+            if let subraceRecord: SubraceRecord = record as? SubraceRecord {
+                SubraceRecordDetailScreen(record: subraceRecord)
+            }
+
         default:
             Text("Unsupported detail view for \(record.type.title)")
         }

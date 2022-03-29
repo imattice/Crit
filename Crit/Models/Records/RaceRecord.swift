@@ -94,7 +94,4 @@ extension RaceRecord {
     private enum CodingKeys: String, CodingKey {
         case name, desc, senses, descriptiveAge, descriptiveAlignment, descriptivePhysique, size, speed, languages, abilityScoreModifiers, features
     }
-
-    // TODO: Implement method
-    func linkSubracesIfNeeded() { /* TODO: Implement Method */ }
 }

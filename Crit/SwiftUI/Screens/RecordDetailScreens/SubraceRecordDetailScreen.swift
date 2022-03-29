@@ -37,6 +37,13 @@ struct SubraceRecordDetailScreen: View {
                         text: feature.desc)
                 }
             }
+
+            if let parentRecord: RaceRecord = record.parentRecord {
+                NavigationLink(
+                    destination: RaceRecordDetailScreen(record: parentRecord)) {
+                        LinkView(title: parentRecord.name)
+                }
+            }
             Spacer()
         }
         .padding(.horizontal)
