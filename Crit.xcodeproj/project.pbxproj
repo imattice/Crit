@@ -77,6 +77,7 @@
 		7F612FA427C4413200C37867 /* ErrorLogLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F612FA327C4413200C37867 /* ErrorLogLine.swift */; };
 		7F6C8B3427CC389B00AA96C0 /* JSONError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6C8B3327CC389A00AA96C0 /* JSONError.swift */; };
 		7F70CC7E27E62AD20083F0B9 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F70CC7D27E62AD20083F0B9 /* Color.swift */; };
+		7FE48B96289732EB0012F8CF /* IMDevCore in Frameworks */ = {isa = PBXBuildFile; productRef = 7FE48B95289732EB0012F8CF /* IMDevCore */; };
 		7FE962A627F2CED50008CB19 /* LinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE962A527F2CED50008CB19 /* LinkView.swift */; };
 		7FE962A827F2D2A60008CB19 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE962A727F2D2A60008CB19 /* DataManager.swift */; };
 		7FF5AFE027E7C59E004B07B0 /* RaceRecordDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF5AFDF27E7C59E004B07B0 /* RaceRecordDetailScreen.swift */; };
@@ -204,6 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F5B317427C0C205003D079D /* RealmSwift in Frameworks */,
+				7FE48B96289732EB0012F8CF /* IMDevCore in Frameworks */,
 				7F5B317227C0C205003D079D /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -544,6 +546,7 @@
 			packageProductDependencies = (
 				7F5B317127C0C205003D079D /* Realm */,
 				7F5B317327C0C205003D079D /* RealmSwift */,
+				7FE48B95289732EB0012F8CF /* IMDevCore */,
 			);
 			productName = Crit;
 			productReference = 7F5B313427C0BCE3003D079D /* Crit.app */;
@@ -619,6 +622,7 @@
 			mainGroup = 7F5B312B27C0BCE3003D079D;
 			packageReferences = (
 				7F5B317027C0C205003D079D /* XCRemoteSwiftPackageReference "realm-swift" */,
+				7FE48B94289732EB0012F8CF /* XCRemoteSwiftPackageReference "IMDevCore" */,
 			);
 			productRefGroup = 7F5B313527C0BCE3003D079D /* Products */;
 			projectDirPath = "";
@@ -1096,6 +1100,14 @@
 				minimumVersion = 10.0.0;
 			};
 		};
+		7FE48B94289732EB0012F8CF /* XCRemoteSwiftPackageReference "IMDevCore" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/imattice/IMDevCore";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1108,6 +1120,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 7F5B317027C0C205003D079D /* XCRemoteSwiftPackageReference "realm-swift" */;
 			productName = RealmSwift;
+		};
+		7FE48B95289732EB0012F8CF /* IMDevCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7FE48B94289732EB0012F8CF /* XCRemoteSwiftPackageReference "IMDevCore" */;
+			productName = IMDevCore;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

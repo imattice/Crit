@@ -1,12 +1,21 @@
 {
   "pins" : [
     {
+      "identity" : "imdevcore",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/imattice/IMDevCore",
+      "state" : {
+        "revision" : "b6920d38243109b590972bc8ad8e063915fee2e8",
+        "version" : "0.0.1"
+      }
+    },
+    {
       "identity" : "realm-core",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/realm/realm-core",
       "state" : {
-        "revision" : "dcd3788f75bafb0cc397d145e1651aab3ad4bf0e",
-        "version" : "11.12.0"
+        "revision" : "55a48c287b5e3a8ca129c257ec7e3b92bcb2a05f",
+        "version" : "12.3.0"
       }
     },
     {
@@ -14,8 +23,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/realm/realm-swift.git",
       "state" : {
-        "revision" : "628cf20632d65d3a3e90ae8aaf52bce596d7ad8f",
-        "version" : "10.24.2"
+        "revision" : "2d5d121f6cf08aa84eeb076b653131a23f1edd6b",
+        "version" : "10.28.3"
       }
     }
   ],
